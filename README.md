@@ -8,6 +8,16 @@ sin enviar tus archivos a ningún servidor.
 - **Descargar la última versión:** https://github.com/josepin2/crea/releases/latest
 - **Requisitos:** Windows 10 / 11 de 64 bits
 
+## Actualizaciones automáticas
+
+El programa comprueba una vez al día si hay una versión nueva (en segundo plano, mientras
+crea el vídeo, sin añadir tiempo) y, si la hay, avisa y **se actualiza solo**: descarga la
+versión nueva, verifica su SHA-256 y sustituye el programa. También puede forzarse con
+`crea --actualizar`.
+
+La versión publicada se anuncia en [`version.json`](version.json), que es lo que consulta el
+programa instalado.
+
 ## Cómo se usa
 
 1. Ejecuta **`Instalar-crea.exe`**. Se instala solo; la primera vez descarga su motor de
