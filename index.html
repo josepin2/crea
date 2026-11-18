@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>crea — Tus fotos y tu música, en un vídeo</title>
+  <meta name="description" content="crea es un programa gratuito para Windows que convierte una carpeta de fotos y una canción en un vídeo MP4 1080p con fundidos suaves, zoom lento y fondo desenfocado. Se instala solo y se usa escribiendo «crea» en la barra de direcciones del Explorador.">
+  <meta name="theme-color" content="#0a0f1a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="crea — Tus fotos y tu música, en un vídeo">
+  <meta property="og:description" content="Gratis para Windows. Abre la carpeta con las fotos y la canción, escribe «crea» y obtén un MP4 1080p con fundidos, zoom suave y fondo desenfocado.">
+  <meta property="og:url" content="https://josepin2.github.io/crea/">
+  <link rel="canonical" href="https://josepin2.github.io/crea/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0f1a'/%3E%3Cpath d='M12 24h40v24a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6z' fill='%23ffc857'/%3E%3Cpath d='M12 24l6-9h28l6 9z' fill='%23ffe09a'/%3E%3Crect x='24' y='27' width='16' height='16' rx='2' fill='%234d8bff'/%3E%3Cpath d='M27 30h10M27 34h10M27 38h10' stroke='%230a0f1a' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="crea, ir al inicio">
+        <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M10 24h44v26a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6z" fill="#ffc857"/>
+          <path d="M10 24l6-9h32l6 9z" fill="#ffe09a"/>
+          <rect x="25" y="27" width="14" height="16" rx="2" fill="#4d8bff"/>
+          <path d="M28 30.5h8M28 34h8M28 37.5h8" stroke="#0a0f1a" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">crea <span class="brand-ver">v1.9</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#que-es">Qué es</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#formatos">Formatos</a></li>
+          <li><a href="#instalacion">Instalación</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar entre tema claro y oscuro">
+          <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/>
+          </svg>
+          <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ─────────────────────────── Portada ─────────────────────────── -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            Windows 10 / 11 · Gratis · Sin registro
+          </p>
+          <h1>Tus fotos y tu música,<br><span class="grad">en un vídeo.</span></h1>
+          <p class="lead">
+            Abre la carpeta donde tienes las fotos y la canción, escribe
+            <code>crea</code> y listo. El vídeo aparece en esa misma carpeta, en 1080p,
+            con fundidos suaves, un zoom lento y las fotos verticales sin franjas negras.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/josepin2/crea/releases/download/v1.9/Instalar-crea.exe">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0 4.2-4.2M12 14 7.8 9.8M4.5 16.5v2.6a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-2.6"/></svg>
+              Descargar gratis
+            </a>
+            <a class="btn btn-ghost" href="#instalacion">Cómo se instala</a>
+          </div>
+
+          <p class="download-meta">
+            <span>Versión 1.9</span>
+            <span>9,1 MB</span>
+            <span>Windows 10 / 11 · 64 bits</span>
+            <span>Sin registro</span>
+          </p>
+
+          <div class="copy-cmd">
+            <span class="copy-cmd-label">Lo único que hay que escribir</span>
+            <div class="copy-cmd-box">
+              <code>crea</code>
+              <button class="copy-btn" type="button" data-copy="crea">Copiar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal" role="img"
+               aria-label="Ejemplo de la consola de crea: aparece el cuadro de créditos, el número de fotos, la duración de la música, el ritmo por foto, una barra de progreso y el vídeo creado.">
+            <div class="terminal-bar">
+              <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="terminal-title">C:\Fotos\Verano 2027 — crea</span>
+            </div>
+            <pre class="terminal-body"><span class="t-cred">  +------------------------------------------------+
+  |  Programa creado por José M.C                  |
+  |  Programa gratuito de libre distribución 2027  |
+  +------------------------------------------------+</span>
+
+  crea 1.9 - fotos + musica = video
+  ----------------------------------------------
+
+  Carpeta : C:\Fotos\Verano 2027
+  Fotos   : 42  [min 8, max 100]
+  Audio   : 1 pista(s)
+  Duracion: 3:12
+  Ritmo   : 4.6 s por foto (maximo 7 s)
+  Fundido : 0.7 s entre fotos
+  Salida  : Verano 2027.mp4
+
+  Creando el video [<span class="t-bar">##########</span>------]  60.4%  1:56/3:12
+  <span class="t-ok">Video creado: Verano 2027.mp4</span>
+  <span class="t-ok">Tamano: 84.3 MB</span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Qué es ─────────────────────────── -->
+    <section class="section" id="que-es">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">Qué es</p>
+          <h2>Un programa pequeño que hace una sola cosa, y la hace bien</h2>
+          <p class="section-sub">
+            <strong>crea</strong> es una utilidad gratuita para Windows que transforma una
+            carpeta con fotos y un archivo de música en un vídeo MP4 listo para compartir.
+            No tiene ventanas ni menús: solo una consola con una barra de progreso.
+            Se instala solo, se usa escribiendo una palabra y no pide nada más.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="4.5" width="18" height="15" rx="2.2"/><path d="M7 9l2.6 2.6L7 14.2M12.4 15h4.6"/></svg>
+            </span>
+            <h3>Sin interfaz, sin líos</h3>
+            <p>
+              No hay que arrastrar fotos a ninguna parte ni configurar nada. El programa
+              toma lo que hay en la carpeta donde estás y lo monta solo.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M12 3v10m0 0 3.6-3.6M12 13 8.4 9.4"/><path d="M4.5 15.5v3a1.8 1.8 0 0 0 1.8 1.8h11.4a1.8 1.8 0 0 0 1.8-1.8v-3"/></svg>
+            </span>
+            <h3>Se instala solo</h3>
+            <p>
+              Un solo archivo, doble clic y ya está. Además descarga por su cuenta todo
+              lo que necesita para crear los vídeos, sin que tengas que instalar nada más.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M4 7.5h16M4 12h16M4 16.5h10"/><circle cx="18.5" cy="16.5" r="2.2"/></svg>
+            </span>
+            <h3>Sin cuentas ni pagos</h3>
+            <p>
+              No hay registro, ni publicidad, ni límites de uso. Funciona sin conexión
+              una vez instalado y no envía tus fotos a ninguna parte.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Cómo funciona ─────────────────────────── -->
+    <section class="section section-alt" id="como-funciona">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">Cómo funciona</p>
+          <h2>Tres pasos y el tercero es abrir el vídeo</h2>
+          <p class="section-sub">
+            Todo ocurre en el mismo sitio donde tienes las fotos: no hay que exportar,
+            ni subir archivos, ni esperar colas.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Escribe <code>crea</code></h3>
+            <p>
+              Abre la carpeta que tiene las fotos y la canción y haz clic en la barra de
+              direcciones del Explorador (donde aparece la ruta). Escribe
+              <code>crea</code> y pulsa ENTER.
+            </p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>El programa monta el vídeo</h3>
+            <p>
+              Ordena las fotos, reparte el tiempo de la música entre ellas y las enlaza
+              con fundidos cruzados, un zoom muy suave y fondo desenfocado en las
+              verticales. Verás el progreso en la consola.
+            </p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Recoge tu MP4</h3>
+            <p>
+              El vídeo se guarda en esa misma carpeta con el nombre de la carpeta.
+              Pulsa ENTER al terminar y se abre solo, listo para enviarlo o subirlo.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Características ─────────────────────────── -->
+    <section class="section" id="caracteristicas">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">Características</p>
+          <h2>Lo que hace con tus fotos y tu música</h2>
+          <p class="section-sub">
+            Reglas claras y pensadas para que el resultado se vea bien sin tener que
+            editar nada a mano.
+          </p>
+        </header>
+
+        <div class="features">
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="M4 17l5-5 3.5 3.5L16 12l4 4"/></svg></span>
+            <h3>Entre 8 y 100 fotos</h3>
+            <p>Las fotos se ordenan de forma natural, así que <em>foto2</em> va antes que <em>foto10</em>. Con menos de 8 o más de 100, el programa lo explica en vez de hacer un vídeo raro.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.5V12l3 2"/></svg></span>
+            <h3>Como máximo 7 segundos por foto</h3>
+            <p>Si la música es corta, cada foto dura menos; si es larga, la secuencia de fotos se repite en bucle. Nunca se queda una foto eterna en pantalla.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="6" width="8" height="12" rx="1.8"/><rect x="13" y="6" width="8" height="12" rx="1.8"/><path d="M11 12h2"/></svg></span>
+            <h3>Fundido cruzado entre fotos</h3>
+            <p>Las fotos se disuelven suavemente unas en otras durante 0,7 segundos, en lugar de cambiar de golpe. Si el ritmo es muy rápido, el fundido se acorta solo.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21"/><path d="M10.5 7.6v5.8M7.6 10.5h5.8"/></svg></span>
+            <h3>Zoom lento, tipo Ken Burns</h3>
+            <p>Cada foto se acerca o se aleja muy despacio, alternando el sentido, para que el vídeo tenga vida sin marear ni recortar a nadie.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="6" y="3" width="12" height="18" rx="2.4"/><path d="M11 18h2"/><rect x="9" y="6.5" width="6" height="8" rx="1"/></svg></span>
+            <h3>Verticales sin franjas negras</h3>
+            <p>La foto se ve entera y centrada, y lo que sobra se rellena con la misma foto ampliada y desenfocada. Puedes mezclar verticales y horizontales sin que queden barras.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M9 18V6l10-2v12"/><circle cx="6.6" cy="18" r="2.4"/><circle cx="16.6" cy="16" r="2.4"/></svg></span>
+            <h3>Música con entrada y salida suave</h3>
+            <p>La canción arranca con un fundido corto y se apaga en los últimos 2 segundos, así el final no corta de golpe. Si hay varias pistas, se encadenan en orden.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.6"/><path d="M20 4.5v4.1h-4.1"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15.4"/><path d="M4 19.5v-4.1h4.1"/></svg></span>
+            <h3>Se repite si la música es más larga</h3>
+            <p>Con pocas fotos y una canción de tres minutos, la secuencia vuelve a empezar. Avisa si el ritmo queda demasiado rápido y sugiere quitar fotos.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 19 6v5.4c0 4.2-2.9 7.6-7 9.4-4.1-1.8-7-5.2-7-9.4V6z"/><path d="M8.7 12.2l2.2 2.2 4.4-4.4"/></svg></span>
+            <h3>Se salta las fotos dañadas</h3>
+            <p>Antes de montar nada comprueba que cada archivo se pueda leer. Si uno está corrupto, lo dice y sigue con el resto en lugar de fallar.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6.5 8.5h5M6.5 11.5h8"/></svg></span>
+            <h3>1920 × 1080, listo para todo</h3>
+            <p>H.264 con audio AAC, 30 fotogramas por segundo y arranque rápido: se ve bien en el móvil, en la tele y en cualquier red social.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 7h16M4 12h16M4 17h9"/><circle cx="19.5" cy="17" r="2"/></svg></span>
+            <h3>Avisos en lenguaje normal</h3>
+            <p>Si algo falla, dice qué pasa y qué hacer (archivo bloqueado, disco lleno, foto dañada, formato no compatible) en vez de escupir errores técnicos.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 3v12"/><path d="M8.4 11.6 12 15.2l3.6-3.6"/><path d="M4.5 17.5v2a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5v-2"/></svg></span>
+            <h3>No toca tus archivos</h3>
+            <p>Crea un archivo nuevo y no modifica ni borra ninguna foto ni canción. Si ya existe un vídeo con ese nombre, añade <em>(2)</em> en vez de sobrescribirlo.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v4.2l2.8 1.8"/><path d="M3.5 12h1.8M18.7 12h1.8"/></svg></span>
+            <h3>Rápido y sin sorpresas</h3>
+            <p>Un vídeo de un minuto se suele crear en unos 20 segundos. La barra muestra el tiempo transcurrido, el que falta y la velocidad de proceso.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Formatos ─────────────────────────── -->
+    <section class="section section-alt" id="formatos">
+      <div class="wrap">
+        <div class="two-col">
+          <div class="reveal">
+            <p class="kicker">Formatos</p>
+            <h2>Lo que acepta sin conversiones</h2>
+            <p class="section-sub">
+              Arrastra o guarda los archivos tal cual vienen del móvil, de la cámara o
+              de internet. Si hay algo que no puede usar, te lo dice antes de empezar.
+            </p>
+
+            <h3 class="mini-head">Fotos</h3>
+            <ul class="chips" aria-label="Formatos de imagen compatibles">
+              <li>JPG</li><li>JPEG</li><li>PNG</li><li>WebP</li><li>BMP</li><li>TIF</li><li>TIFF</li>
+            </ul>
+
+            <h3 class="mini-head">Música</h3>
+            <ul class="chips" aria-label="Formatos de audio compatibles">
+              <li>MP3</li><li>M4A</li><li>AAC</li><li>WAV</li><li>OGG</li><li>OPUS</li><li>FLAC</li><li>WMA</li>
+            </ul>
+          </div>
+
+          <aside class="note-card reveal">
+            <h3>
+              <span class="note-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M12 4.5 21 19.5H3z"/><path d="M12 10v4.2M12 16.8v.2"/></svg>
+              </span>
+              Fotos del iPhone en HEIC
+            </h3>
+            <p>
+              El paquete de vídeo que usa el programa no puede leer el formato
+              <strong>HEIC</strong> de algunas fotos de iPhone. Si las tienes así, hay dos
+              soluciones sencillas:
+            </p>
+            <ol class="tight-list">
+              <li>En el iPhone: <em>Ajustes → Cámara → Formatos → «Más compatible»</em>.</li>
+              <li>O conviértelas a JPG en el PC.</li>
+            </ol>
+            <p class="muted">
+              Si en la carpeta hay archivos que no se pueden usar (HEIC, GIF, vídeos…),
+              el programa lo avisa con la cantidad y el motivo, sin detenerse.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Instalación ─────────────────────────── -->
+    <section class="section" id="instalacion">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">Instalación</p>
+          <h2>Dos clics y una palabra</h2>
+          <p class="section-sub">
+            El archivo que se entrega es <strong>Instalar-crea.exe</strong>. Al ejecutarlo
+            se instala solo; no hace preguntas ni pide configurar nada.
+          </p>
+        </header>
+
+        <div class="download-box reveal">
+          <div class="download-box-head">
+            <a class="btn btn-primary"
+               href="https://github.com/josepin2/crea/releases/download/v1.9/Instalar-crea.exe">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0 4.2-4.2M12 14 7.8 9.8M4.5 16.5v2.6a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-2.6"/></svg>
+              Descargar Instalar-crea.exe
+            </a>
+            <p class="download-box-meta">9,1 MB · versión 1.9 · Windows 10/11 de 64 bits</p>
+          </div>
+          <details class="sha-details">
+            <summary>Verificar la descarga (SHA-256)</summary>
+            <p>
+              Si quieres comprobar que el archivo ha llegado íntegro, calcula su huella
+              con <code>certutil -hashfile Instalar-crea.exe SHA256</code> y compárala con:
+            </p>
+            <code class="sha">832289A314AAD74D2081D52C710FF59AE3B29C2EC049639E6FFBFF9B83F7D638</code>
+            <p class="muted">
+              Todas las versiones, con sus notas, están en
+              <a href="https://github.com/josepin2/crea/releases">la página de versiones</a>.
+            </p>
+          </details>
+        </div>
+
+        <div class="install-grid">
+          <ol class="steps steps-vertical">
+            <li class="step reveal">
+              <span class="step-num" aria-hidden="true">1</span>
+              <h3>Doble clic en el instalador</h3>
+              <p>
+                Se copia a <code>C:\VideoCrea</code> y se registra para que la palabra
+                <code>crea</code> funcione en cualquier carpeta del Explorador.
+              </p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num" aria-hidden="true">2</span>
+              <h3>Espera a que termine</h3>
+              <p>
+                La primera vez descarga su motor de vídeo (unos 110 MB) y muestra el
+                progreso. Si no hay internet, avisa y lo reintenta la primera vez que lo
+                uses.
+              </p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num" aria-hidden="true">3</span>
+              <h3>Abre tu carpeta y escribe <code>crea</code></h3>
+              <p>
+                El vídeo aparece junto a tus fotos. Si acabas de instalar, abre una
+                ventana nueva del Explorador para que vea el cambio.
+              </p>
+            </li>
+          </ol>
+
+          <div class="side-panel reveal">
+            <h3 class="mini-head">Otros comandos útiles</h3>
+            <dl class="commands">
+              <div>
+                <dt><code>crea "D:\Mis fotos"</code></dt>
+                <dd>Hace el vídeo de esa carpeta concreta.</dd>
+              </div>
+              <div>
+                <dt><code>crea --ayuda</code></dt>
+                <dd>Muestra el resumen de uso y las reglas del montaje.</dd>
+              </div>
+              <div>
+                <dt><code>crea --instalar-ffmpeg</code></dt>
+                <dd>Descarga o repara el motor de vídeo.</dd>
+              </div>
+              <div>
+                <dt><code>crea --desinstalar</code></dt>
+                <dd>Quita el programa (no toca fotos, música ni vídeos).</dd>
+              </div>
+            </dl>
+
+            <div class="callout">
+              <h4>Requisitos</h4>
+              <ul class="tight-list">
+                <li>Windows 10 u 11 de 64 bits.</li>
+                <li>Una carpeta con 8–100 fotos y al menos una canción.</li>
+                <li>Internet solo la primera vez.</li>
+                <li>Nada de Python ni programas adicionales.</li>
+              </ul>
+            </div>
+
+            <div class="callout callout-warn">
+              <h4>El aviso de Windows</h4>
+              <p>
+                La primera vez puede aparecer «Windows protegió tu PC» porque el archivo no
+                está firmado. Pulsa <em>Más información → Ejecutar de todas formas</em>.
+                Es habitual en programas gratuitos sin certificado comercial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Preguntas ─────────────────────────── -->
+    <section class="section section-alt" id="preguntas">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">Preguntas frecuentes</p>
+          <h2>Dudas que suele haber</h2>
+        </header>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>¿Dónde se guarda el vídeo?</summary>
+            <p>
+              En la misma carpeta donde están las fotos y la canción, con el nombre de la
+              carpeta. Por ejemplo, la carpeta <code>Verano 2027</code> genera
+              <code>Verano 2027.mp4</code>. Si ya existe, se crea
+              <code>Verano 2027 (2).mp4</code> y no se sobrescribe nada.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Se borran o se modifican mis fotos?</summary>
+            <p>
+              No. El programa solo lee las fotos y la música y escribe un archivo nuevo.
+              No cambia nombres, ni tamaños, ni etiquetas, ni mueve nada de sitio.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Qué pasa si mezclo fotos verticales y horizontales?</summary>
+            <p>
+              Que se ven bien las dos. Cada foto se muestra entera y centrada, y el hueco
+              hasta 1920 × 1080 se rellena con la misma foto ampliada y desenfocada. No hay
+              franjas negras ni saltos de tamaño entre fotos.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Y si la canción dura más que las fotos?</summary>
+            <p>
+              La secuencia de fotos se repite en bucle hasta cubrir toda la canción, con un
+              máximo de 7 segundos por foto. Si el ritmo queda demasiado rápido, el programa
+              avisa y sugiere quitar fotos o usar una canción más larga.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Puedo usar varias canciones?</summary>
+            <p>
+              Sí. Si hay más de una pista en la carpeta, se reproducen una detrás de otra
+              en orden natural de nombre. Puedes mezclar formatos sin problema.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Necesito internet para crear los vídeos?</summary>
+            <p>
+              No, solo la primera vez, para descargar el motor de vídeo. Después todo
+              funciona sin conexión: tus archivos no se envían a ningún servidor.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Por qué pide 8 fotos como mínimo y 100 como máximo?</summary>
+            <p>
+              Con menos de 8, el vídeo se queda en nada (56 segundos como mucho). Con más de
+              100, cada foto pasa tan rápido que no se llega a ver. Si tienes muchas, lo
+              mejor es repartirlas por eventos o por días y hacer un vídeo con cada carpeta.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Cómo lo desinstalo?</summary>
+            <p>
+              Con <strong>Configuración → Aplicaciones → crea → Desinstalar</strong>, o
+              escribiendo <code>crea --desinstalar</code>. Se borra el programa y su motor
+              de vídeo; tus fotos, canciones y vídeos se quedan donde están.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>¿Es gratis de verdad?</summary>
+            <p>
+              Sí. No hay versión de pago, ni suscripción, ni límite de vídeos, ni marcas de
+              agua. Es un programa gratuito de libre distribución.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─────────────────────────── Pie ─────────────────────────── -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="crea, ir al inicio">
+          <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <path d="M10 24h44v26a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6z" fill="#ffc857"/>
+            <path d="M10 24l6-9h32l6 9z" fill="#ffe09a"/>
+            <rect x="25" y="27" width="14" height="16" rx="2" fill="#4d8bff"/>
+            <path d="M28 30.5h8M28 34h8M28 37.5h8" stroke="#0a0f1a" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-text">crea</span>
+        </a>
+        <p>
+          Convierte una carpeta de fotos y una canción en un vídeo MP4 en 1080p.
+          Gratis, sin registro y sin enviar tus archivos a ningún sitio.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces del pie">
+        <h2>Secciones</h2>
+        <ul>
+          <li><a href="#que-es">Qué es</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#formatos">Formatos</a></li>
+          <li><a href="#instalacion">Instalación</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="https://github.com/josepin2/crea/releases">Descargar</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-credits">
+        <h2>Créditos</h2>
+        <p><strong>Página web creada por José M.C</strong></p>
+        <p>Programa gratuito de libre distribución 2027</p>
+        <p class="muted">Programa creado por José M.C · versión 1.9</p>
+        <p class="muted">Windows 10 / 11 · 64 bits</p>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <p>© 2027 crea · Programa gratuito de libre distribución</p>
+      <p>Hecho para Windows 10 y 11 de 64 bits</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
