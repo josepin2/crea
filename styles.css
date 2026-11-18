@@ -1127,3 +1127,14 @@ html:not(.no-js) .reveal.is-visible {
   white-space: normal;
   word-break: break-all;
 }
+/* Actualizaciones / comandos copiables ------------------------------- */
+.step .copy-cmd-box {
+  margin-top: 0.85rem;
+  background: color-mix(in srgb, var(--bg) 55%, transparent);
+}
+.mini-note {
+  margin: 0.55rem 0 0;
+  font-size: 0.87rem;
+  color: var(--muted);
+}
+.note-card .btn { margin-top: 0.35rem; }

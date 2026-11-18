@@ -41,6 +41,7 @@
           <li><a href="#caracteristicas">Características</a></li>
           <li><a href="#formatos">Formatos</a></li>
           <li><a href="#instalacion">Instalación</a></li>
+          <li><a href="#actualizaciones">Actualizaciones</a></li>
           <li><a href="#preguntas">Preguntas</a></li>
         </ul>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar entre tema claro y oscuro">
@@ -439,6 +440,10 @@
                 <dd>Muestra el resumen de uso y las reglas del montaje.</dd>
               </div>
               <div>
+                <dt><code>crea --actualizar</code></dt>
+                <dd>Comprueba e instala la última versión al momento.</dd>
+              </div>
+              <div>
                 <dt><code>crea --instalar-ffmpeg</code></dt>
                 <dd>Descarga o repara el motor de vídeo.</dd>
               </div>
@@ -471,8 +476,79 @@
       </div>
     </section>
 
+    <!-- ─────────────────────────── Actualizaciones ─────────────────────────── -->
+    <section class="section section-alt" id="actualizaciones">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">Actualizaciones</p>
+          <h2>Se mantiene al día solo, y si falla hay un comando</h2>
+          <p class="section-sub">
+            Cada mejora del programa llega a tu equipo sin que tengas que descargar nada.
+            Y si algo no funcionó, puedes forzarlo en un segundo.
+          </p>
+        </header>
+
+        <div class="two-col">
+          <ol class="steps steps-vertical">
+            <li class="step reveal">
+              <span class="step-num" aria-hidden="true">1</span>
+              <h3>Comprueba una vez al día</h3>
+              <p>
+                Mientras crea un vídeo consulta si hay una versión nueva. No añade tiempo al
+                proceso y no envía tus fotos ni datos a ningún sitio.
+              </p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num" aria-hidden="true">2</span>
+              <h3>Te avisa al terminar</h3>
+              <p>
+                Si hay novedades, las muestra y pregunta. Con <strong>S</strong> y ENTER se
+                descarga, comprueba que está íntegra y se instala sola.
+              </p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num" aria-hidden="true">3</span>
+              <h3>¿No se ha actualizado? Usa este comando</h3>
+              <p>
+                Si cancelaste el aviso, no había conexión en ese momento o algo falló, abre
+                la barra de direcciones del Explorador en cualquier carpeta y escribe:
+              </p>
+              <div class="copy-cmd-box">
+                <code>crea --actualizar</code>
+                <button class="copy-btn" type="button" data-copy="crea --actualizar">Copiar</button>
+              </div>
+              <p class="mini-note">
+                Comprueba al momento si hay versión nueva y te ofrece instalarla.
+              </p>
+            </li>
+          </ol>
+
+          <aside class="note-card reveal">
+            <h3>
+              <span class="note-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M12 4v10m0 0 3.6-3.6M12 14 8.4 10.4"/><path d="M4.5 16.5v2.6a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-2.6"/></svg>
+              </span>
+              Si nada de eso funciona
+            </h3>
+            <p>
+              Descarga el instalador otra vez y ejecútalo: se instala encima de la versión
+              anterior sin perder nada (ni fotos, ni música, ni los vídeos que ya tengas).
+            </p>
+            <p class="mini-note">
+              Todas las versiones, con sus notas, están en la página de versiones.
+            </p>
+            <p>
+              <a class="btn btn-ghost" href="https://github.com/josepin2/crea/releases/latest">
+                Ir a las versiones
+              </a>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <!-- ─────────────────────────── Preguntas ─────────────────────────── -->
-    <section class="section section-alt" id="preguntas">
+    <section class="section" id="preguntas">
       <div class="wrap">
         <header class="section-head reveal">
           <p class="kicker">Preguntas frecuentes</p>
@@ -564,6 +640,16 @@
           </details>
 
           <details class="reveal">
+            <summary>¿Cómo actualizo el programa a la última versión?</summary>
+            <p>
+              Solo: una vez al día comprueba si hay una versión nueva al crear un vídeo y te
+              avisa al terminar. Si cancelaste el aviso, no había internet o quieres forzarlo,
+              escribe <code>crea --actualizar</code> en la barra de direcciones de cualquier
+              carpeta.
+            </p>
+          </details>
+
+          <details class="reveal">
             <summary>¿Cómo lo desinstalo?</summary>
             <p>
               Con <strong>Configuración → Aplicaciones → crea → Desinstalar</strong>, o
@@ -611,6 +697,7 @@
           <li><a href="#caracteristicas">Características</a></li>
           <li><a href="#formatos">Formatos</a></li>
           <li><a href="#instalacion">Instalación</a></li>
+          <li><a href="#actualizaciones">Actualizaciones</a></li>
           <li><a href="#preguntas">Preguntas</a></li>
           <li><a href="https://github.com/josepin2/crea/releases">Descargar</a></li>
         </ul>

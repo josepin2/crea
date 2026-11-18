@@ -15,7 +15,6 @@
   var nav = document.getElementById("navMenu");
   var navToggle = document.getElementById("navToggle");
   var themeToggle = document.getElementById("themeToggle");
-  var copyBtn = document.querySelector(".copy-btn");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   var MOBILE = 820;
@@ -134,17 +133,18 @@
   window.addEventListener("scroll", checkScroll, { passive: true });
 
   /* ------------------------------ Copiar -------------------------------- */
-  if (copyBtn) {
-    copyBtn.addEventListener("click", function () {
-      var text = copyBtn.getAttribute("data-copy") || "crea";
-      var original = copyBtn.textContent;
+  /* Hay varios botones de copiar (el comando «crea» y «crea --actualizar»). */
+  Array.prototype.forEach.call(document.querySelectorAll(".copy-btn"), function (button) {
+    button.addEventListener("click", function () {
+      var text = button.getAttribute("data-copy") || "crea";
+      var original = button.textContent;
 
       function done(ok) {
-        copyBtn.textContent = ok ? "¡Copiado!" : "Cópialo a mano";
-        copyBtn.classList.toggle("is-copied", ok);
+        button.textContent = ok ? "¡Copiado!" : "Cópialo a mano";
+        button.classList.toggle("is-copied", ok);
         window.setTimeout(function () {
-          copyBtn.textContent = original;
-          copyBtn.classList.remove("is-copied");
+          button.textContent = original;
+          button.classList.remove("is-copied");
         }, 1900);
       }
 
@@ -171,7 +171,7 @@
         done(false);
       }
     });
-  }
+  });
 
   /* --------------------- Aparición al hacer scroll ---------------------- */
   var revealItems = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
