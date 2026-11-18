@@ -26,7 +26,7 @@
           <rect x="25" y="27" width="14" height="16" rx="2" fill="#4d8bff"/>
           <path d="M28 30.5h8M28 34h8M28 37.5h8" stroke="#0a0f1a" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
-        <span class="brand-text">crea <span class="brand-ver">v1.11</span></span>
+        <span class="brand-text">crea <span class="brand-ver">v1.12</span></span>
       </a>
 
       <button class="nav-toggle" id="navToggle" type="button"
@@ -74,7 +74,7 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/josepin2/crea/releases/download/v1.11/Instalar-crea.exe">
+            <a class="btn btn-primary" href="https://github.com/josepin2/crea/releases/download/v1.12/Instalar-crea.exe">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0 4.2-4.2M12 14 7.8 9.8M4.5 16.5v2.6a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-2.6"/></svg>
               Descargar gratis
             </a>
@@ -82,7 +82,7 @@
           </div>
 
           <p class="download-meta">
-            <span>Versión 1.11</span>
+            <span>Versión 1.12</span>
             <span>9,1 MB</span>
             <span>Windows 10 / 11 · 64 bits</span>
             <span>Sin registro</span>
@@ -109,7 +109,7 @@
   |  Programa gratuito de libre distribución 2027  |
   +------------------------------------------------+</span>
 
-  crea 1.11 - fotos + musica = video
+  crea 1.12 - fotos + musica = video
   ----------------------------------------------
 
   Carpeta : C:\Fotos\Verano 2027
@@ -302,6 +302,12 @@
           </article>
 
           <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="6" width="18" height="11" rx="2"/><path d="M7 20h10M12 17v3"/><path d="M7 10.5h4M7 13h7"/></svg></span>
+            <h3>Usa tu tarjeta gráfica</h3>
+            <p>Si el equipo tiene una GPU compatible (NVIDIA, Intel o AMD), la aprovecha para codificar y el vídeo se crea varias veces más rápido. Si no, usa el procesador igual de bien.</p>
+          </article>
+
+          <article class="feature reveal">
             <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v4.2l2.8 1.8"/><path d="M3.5 12h1.8M18.7 12h1.8"/></svg></span>
             <h3>Rápido y sin sorpresas</h3>
             <p>Un vídeo de un minuto se suele crear en unos 20 segundos. La barra muestra el tiempo transcurrido, el que falta y la velocidad de proceso.</p>
@@ -373,11 +379,11 @@
         <div class="download-box reveal">
           <div class="download-box-head">
             <a class="btn btn-primary"
-               href="https://github.com/josepin2/crea/releases/download/v1.11/Instalar-crea.exe">
+               href="https://github.com/josepin2/crea/releases/download/v1.12/Instalar-crea.exe">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0 4.2-4.2M12 14 7.8 9.8M4.5 16.5v2.6a1.9 1.9 0 0 0 1.9 1.9h11.2a1.9 1.9 0 0 0 1.9-1.9v-2.6"/></svg>
               Descargar Instalar-crea.exe
             </a>
-            <p class="download-box-meta">9,1 MB · versión 1.11 · Windows 10/11 de 64 bits</p>
+            <p class="download-box-meta">9,1 MB · versión 1.12 · Windows 10/11 de 64 bits</p>
           </div>
           <details class="sha-details">
             <summary>Verificar la descarga (SHA-256)</summary>
@@ -385,7 +391,7 @@
               Si quieres comprobar que el archivo ha llegado íntegro, calcula su huella
               con <code>certutil -hashfile Instalar-crea.exe SHA256</code> y compárala con:
             </p>
-            <code class="sha">99AF4E0707C639FAB030C25D2B548BA5A92E60E36D6527504D4ED9F43E8A1174</code>
+            <code class="sha">AAEA77A7403EA80FB71744A0CDD2AEBA3F3CA3DBEF1E5A45383015161711602A</code>
             <p class="muted">
               Todas las versiones, con sus notas, están en
               <a href="https://github.com/josepin2/crea/releases">la página de versiones</a>.
@@ -528,6 +534,17 @@
           </details>
 
           <details class="reveal">
+            <summary>¿Usa mi tarjeta gráfica?</summary>
+            <p>
+              Sí, si el equipo tiene una compatible (NVIDIA, Intel o AMD): la detecta y la
+              usa para codificar, y el vídeo se crea varias veces más rápido. Si no hay,
+              trabaja con el procesador igual de bien. La consola indica cuál está usando en
+              la línea «Motor». Si algún día la GPU diera problemas, puedes forzar el
+              procesador con <code>crea --sin-gpu</code>.
+            </p>
+          </details>
+
+          <details class="reveal">
             <summary>¿Por qué pide 8 fotos como mínimo y 100 como máximo?</summary>
             <p>
               Con menos de 8, el vídeo se queda en nada (56 segundos como mucho). Con más de
@@ -593,7 +610,7 @@
         <h2>Créditos</h2>
         <p><strong>Página web creada por José M.C</strong></p>
         <p>Programa gratuito de libre distribución 2027</p>
-        <p class="muted">Programa creado por José M.C · versión 1.11</p>
+        <p class="muted">Programa creado por José M.C · versión 1.12</p>
         <p class="muted">Windows 10 / 11 · 64 bits</p>
       </div>
     </div>

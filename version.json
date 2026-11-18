@@ -1,8 +1,8 @@
 {
-    "version":  "1.11",
+    "version":  "1.12",
     "published":  "2026-11-18",
-    "notes":  "Mejoras internas: publicacion automatica y comprobaciones de la web.",
-    "download":  "https://github.com/josepin2/crea/releases/download/v1.11/Instalar-crea.exe",
-    "sha256":  "99AF4E0707C639FAB030C25D2B548BA5A92E60E36D6527504D4ED9F43E8A1174",
-    "size":  9575823
+    "notes":  "Videos hasta 4 veces mas rapidos con la tarjeta grafica; zoom solo de acercamiento.",
+    "download":  "https://github.com/josepin2/crea/releases/download/v1.12/Instalar-crea.exe",
+    "sha256":  "AAEA77A7403EA80FB71744A0CDD2AEBA3F3CA3DBEF1E5A45383015161711602A",
+    "size":  9579380
 }
