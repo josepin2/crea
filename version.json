@@ -1,8 +1,8 @@
 {
-  "version": "1.10",
-  "published": "2026-11-18",
-  "notes": "Aviso de version nueva dentro del programa, con descarga automatica, y comando crea --actualizar.",
-  "download": "https://github.com/josepin2/crea/releases/download/v1.10/Instalar-crea.exe",
-  "sha256": "42DABE3E72D73872B1139A079E13073386AC222E0339CE72E53E797B2625D84D",
-  "size": 9575655
+    "version":  "1.11",
+    "published":  "2026-11-18",
+    "notes":  "Mejoras internas: publicacion automatica y comprobaciones de la web.",
+    "download":  "https://github.com/josepin2/crea/releases/download/v1.11/Instalar-crea.exe",
+    "sha256":  "99AF4E0707C639FAB030C25D2B548BA5A92E60E36D6527504D4ED9F43E8A1174",
+    "size":  9575823
 }
