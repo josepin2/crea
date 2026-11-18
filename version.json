@@ -1,8 +1,8 @@
 {
-    "version":  "1.12",
+    "version":  "1.13",
     "published":  "2026-11-18",
-    "notes":  "Videos hasta 4 veces mas rapidos con la tarjeta grafica; zoom solo de acercamiento.",
-    "download":  "https://github.com/josepin2/crea/releases/download/v1.12/Instalar-crea.exe",
-    "sha256":  "AAEA77A7403EA80FB71744A0CDD2AEBA3F3CA3DBEF1E5A45383015161711602A",
-    "size":  9579380
+    "notes":  "Las fotos 3:2 llenan la pantalla sin bandas; el resto, con fondo desenfocado.",
+    "download":  "https://github.com/josepin2/crea/releases/download/v1.13/Instalar-crea.exe",
+    "sha256":  "5E4D16A60928F1BF5500E437A3076F99E350510AC8190FEFBC3AB5DC3D7FB7B9",
+    "size":  9581349
 }
