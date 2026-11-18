@@ -1,8 +1,8 @@
 {
-    "version":  "1.13",
+    "version":  "1.14",
     "published":  "2026-11-18",
-    "notes":  "Las fotos 3:2 llenan la pantalla sin bandas; el resto, con fondo desenfocado.",
-    "download":  "https://github.com/josepin2/crea/releases/download/v1.13/Instalar-crea.exe",
-    "sha256":  "5E4D16A60928F1BF5500E437A3076F99E350510AC8190FEFBC3AB5DC3D7FB7B9",
-    "size":  9581349
+    "notes":  "Si todas las fotos son verticales, el video sale en vertical 9:16.",
+    "download":  "https://github.com/josepin2/crea/releases/download/v1.14/Instalar-crea.exe",
+    "sha256":  "C2F05D0EC5F0957476BB9C9794EF5E172E8161F025993760908DADB3FA38E818",
+    "size":  9582657
 }
